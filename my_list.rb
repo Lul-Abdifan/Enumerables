@@ -19,12 +19,12 @@ end
 list = MyList.new([1, 2, 3, 4])
 
 # Check if all elements in the list are less than 5
-puts(list.all? { |e| e < 5 })
+puts list.all? { |e| e < 5 }
 # Check if all elements in the list are greater than 5
-puts(list.all? { |e| e > 5 })
+puts list.all? { |e| e > 5 }
 # Check if any element in the list is equal to 2
-puts(list.any? { |e| e == 2 })
+puts list.any? { |e| e == 2 }
 # Check if any element in the list is equal to 5
-puts(list.any? { |e| e == 5 })
+puts list.any? { |e| e == 5 }
 # Filter the list and keep only even elements
 puts list.filter(&:even?).inspect
